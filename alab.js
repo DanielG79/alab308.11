@@ -28,4 +28,20 @@ if (oddCount < 2) {
 const allDivisibleByFive = n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
 console.log("numbers are divisible by 5");
 
+const subtractResult = n2 - n1;
+const multiplyResult = subtractResult * n3;
+const remainderResult = multiplyResult % n4;
+console.log("Arithmetic chain result:", remainderResult);
+
+// any number is larger than or equal to 25
+
+const isWithinRange = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
+if (!isWithinRange) {
+    console.log("Error: No number can be larger than or equal to 25.");
+    return false;
+    }
+    {
+    console.log("The numbers are valid!");
+    return true;
+}
 
